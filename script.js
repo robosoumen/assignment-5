@@ -13,6 +13,11 @@ document.getElementById('copy-card-id').addEventListener('click',function(){
 
 
 // for call button adding event listener
-// document.getElementById('btn-call').addEventListener('click',function(){
-//     console.log('call button clicked')
-// })
+document.getElementById('btn-call').addEventListener('click',function(){
+    const departmentName = document.getElementById('department-name').innerText
+    const departmentPhoneNumber = document.getElementById('department-number').innerText
+    alert(departmentName+' '+departmentPhoneNumber)
+    const bannerCoin = document.getElementById('banner-coin').innerText
+    const newBannerCoin = bannerCoin - 20
+    document.getElementById('banner-coin').innerText = newBannerCoin
+})
