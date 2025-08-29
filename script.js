@@ -52,7 +52,7 @@ for(let cartBtn of cartButtons){
         // create div
     const newUpdatedService = document.createElement('div');
     newUpdatedService.innerHTML = `
-         <div class="flex justify-between mt-8 bg-[#f5fff6] mx-1">
+         <div class="flex justify-between mt-8 bg-[#f5fff6] mx-1 gap-1">
                    <div id="history" class="ml-8 text-[20px]">
                         <p  class="font-bold text-[15px]">${departmentName}</p>
                         <p  class="text-[20px]">${departmentPhoneNumber}</p>
