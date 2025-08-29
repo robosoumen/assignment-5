@@ -54,11 +54,11 @@ for(let cartBtn of cartButtons){
     newUpdatedService.innerHTML = `
          <div class="flex justify-between mt-8 bg-[#f5fff6] mx-1">
                    <div id="history" class="ml-8 text-[20px]">
-                        <p  class="font-bold text-[25px]">${departmentName}</p>
-                        <p  class="text-[25px]">${departmentPhoneNumber}</p>
+                        <p  class="font-bold text-[15px]">${departmentName}</p>
+                        <p  class="text-[20px]">${departmentPhoneNumber}</p>
                    </div> 
                    <div class="mr-8">
-                        <p class="text-[20px] font-semibold">${time}</p>
+                        <p class="text-[15px] font-semibold">${time}</p>
                    </div>
                 </div>
     `
