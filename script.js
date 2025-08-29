@@ -1,15 +1,40 @@
 // heart function
-document.getElementById('card-heart').addEventListener('click',function(){
-    const heartValue = parseInt(document.getElementById('banner-heart').innerText)
-    const newHeartvalue = heartValue + 1
-    document.getElementById('banner-heart').innerText = newHeartvalue
-})
+// document.getElementById('card-heart').addEventListener('click',function(){
+//     const heartValue = parseInt(document.getElementById('banner-heart').innerText)
+//     const newHeartvalue = heartValue + 1
+//     document.getElementById('banner-heart').innerText = newHeartvalue
+// })
+const navHeart = document.getElementsByClassName('nav-heart')
+for(let heart of navHeart){
+    heart.addEventListener('click',function (){
+        const heartValue = parseInt(document.getElementById('banner-heart').innerText)
+        const newHeartValue = heartValue + 1
+        document.getElementById('banner-heart').innerText = newHeartValue
+
+    })
+}
+
+
+
+
+
 // copy function
-document.getElementById('copy-card-id').addEventListener('click',function(){
-    const copyValue = parseInt(document.getElementById('copy-banner').innerText)
-    const newCopyValue = copyValue + 1
-    document.getElementById('copy-banner').innerText = newCopyValue
-})
+// document.getElementById('copy-card-id').addEventListener('click',function(){
+//     const copyValue = parseInt(document.getElementById('copy-banner').innerText)
+//     const newCopyValue = copyValue + 1
+//     document.getElementById('copy-banner').innerText = newCopyValue
+// })
+const cardCopyClass = document.getElementsByClassName('card-copy-class')
+for(let cardCopy of cardCopyClass){
+    cardCopy.addEventListener('click',function(){
+         alert('number is copied')
+         const copyValue = parseInt(document.getElementById('copy-banner').innerText)
+         const newCopyValue = copyValue + 1
+          document.getElementById('copy-banner').innerText = newCopyValue
+    })
+}
+
+
 
 
 
@@ -49,11 +74,12 @@ const cartButtons = document.getElementsByClassName('cart-btn')
 // console.log(cartButtons)
 for(let cartBtn of cartButtons){
     cartBtn.addEventListener('click',function(){
+        const call = 'calling'
         const departmentName = cartBtn.parentNode.parentNode.children[0].innerText
         const departmentPhoneNumber = cartBtn.parentNode.parentNode.children[2].innerText
         const time = new Date().toLocaleTimeString()
         // console.log(departmentPhoneNumber)
-        alert(departmentName+' '+departmentPhoneNumber)
+        alert(call+' '+departmentName+' '+departmentPhoneNumber)
          const bannerCoin = document.getElementById('banner-coin').innerText
        const newBannerCoin = bannerCoin - 20
        document.getElementById('banner-coin').innerText = newBannerCoin
